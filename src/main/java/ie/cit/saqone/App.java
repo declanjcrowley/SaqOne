@@ -16,7 +16,7 @@ public class App {
 		context=new ClassPathXmlApplicationContext("configuration.xml");
 		
 		SongwriterImpl songwriter=(SongwriterImpl)context.getBean("marywriter");
-		System.out.println("The songwriters name is: "+ songwriter.getFirstname() + " The song name is: " + songwriter.getSong().getName()+" The lyrics are: " + songwriter.getSong().getLyrics());
+		System.out.println("The songwriters name is: "+ songwriter.getFirstname() + " Song name is: " + songwriter.getSong().getName()+" The lyrics are: " + songwriter.getSong().getLyrics());
 				
 		SongwriterImpl setterDISongwriter =(SongwriterImpl)context.getBean("marywriter");
 		System.out.println("Songwriter name is: "+ setterDISongwriter.getFirstname());
